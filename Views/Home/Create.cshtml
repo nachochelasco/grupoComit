@@ -1,0 +1,17 @@
+<h1>Agregar Nota</h1>
+<hr/>
+<div>
+    <form method="POST" asp-action="AgregarNota" asp-controller="Home">
+        <div class="form-group">
+            <label for="titulo">Titulo</label>
+            <input class="form-control" type="text" name="titulo" placeholder="Ingrese tu titulo" required /><br/>
+
+
+            <label for="cuerpo">Cuerpo:</label>
+            <textarea class="form-control" name="cuerpo" placeholder="Ingrese un cuerpo"required></textarea><br/>
+
+            <button type="submit" > Agregar </button>
+        </div>
+        
+    </form>
+</div>
