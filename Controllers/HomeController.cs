@@ -23,24 +23,36 @@ namespace asap.mvc.Controllers
 
         public  IActionResult Index()
         {
-            return View(db.Notas.ToList());
+            Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            if ( user != null) {
+                return View(db.Notas.ToList());
+            }
+            else {
+                return Redirect("/Home/Login");
+            }
+        }
+
+        public IActionResult AgregarNota(string titulo, string cuerpo) 
+        {
+            Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            if ( user != null) {
+
+                Usuario usuarioBase = db.Usuarios.FirstOrDefault(u => u.Mail.Equals(user.Mail));
+                Nota nuevaNota = new Nota{
+                Titulo = titulo,
+                Cuerpo = cuerpo,
+                Creador = usuarioBase
+                };
+
+                db.Notas.Add(nuevaNota);
+                db.SaveChanges();
+                return Redirect("/Home/Index");
+            }
+            else {
+                return Json("No se puede agregar una nota si no estas logueado");
+            }
             
         }
-
-        public IActionResult AgregarNota(string titulo, string cuerpo)
-        {
-            Nota nuevaNota = new Nota{
-                Titulo = titulo,
-                Cuerpo = cuerpo
-            };
-
-            db.Notas.Add(nuevaNota);
-            db.SaveChanges();
-            return View() ;
-        }
-
-        
-    
 
         public IActionResult Privacy()
         {
@@ -50,6 +62,27 @@ namespace asap.mvc.Controllers
         public IActionResult Create()
         {
             return View() ;
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(string email, string nombre)
+        {
+            Usuario nuevoUsuario = new Usuario
+            {
+                Mail = email,
+                Nombre = nombre
+            };
+
+            db.Usuarios.Add(nuevoUsuario);
+            db.SaveChanges();
+            HttpContext.Session.Set<Usuario>("UsuarioLogueado", nuevoUsuario);
+            return Redirect("/Home/Index");
+
         }
 
 

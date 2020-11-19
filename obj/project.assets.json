@@ -8912,11 +8912,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nacho\\Desktop\\Tarea2\\asap.mvc.csproj",
+      "projectUniqueName": "C:\\Users\\Nacho\\Desktop\\grupoComit\\asap.mvc.csproj",
       "projectName": "asap.mvc",
-      "projectPath": "C:\\Users\\Nacho\\Desktop\\Tarea2\\asap.mvc.csproj",
+      "projectPath": "C:\\Users\\Nacho\\Desktop\\grupoComit\\asap.mvc.csproj",
       "packagesPath": "C:\\Users\\Nacho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nacho\\Desktop\\Tarea2\\obj\\",
+      "outputPath": "C:\\Users\\Nacho\\Desktop\\grupoComit\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nacho\\AppData\\Roaming\\NuGet\\NuGet.Config"

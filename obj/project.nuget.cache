@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1dqArSWPLZshJA+H5dmQabGJcMeAdiFUB1R88WMVdc5qTsOtsuQVsXLzCi2JjGmtTlupDqhfZJgz0Xpi2qlI4w==",
+  "dgSpecHash": "dPrBP7AgwFzd+V2BVbOJdbkkQgaYh3mmZBcAy/C6mu+XjrlEbT1Ny5FFrIKQZJFNg1mclpjcSB1htKZubAwZPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nacho\\Desktop\\Tarea2\\asap.mvc.csproj",
+  "projectFilePath": "C:\\Users\\Nacho\\Desktop\\grupoComit\\asap.mvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nacho\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Nacho\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.9\\microsoft.aspnetcore.jsonpatch.3.1.9.nupkg.sha512",
