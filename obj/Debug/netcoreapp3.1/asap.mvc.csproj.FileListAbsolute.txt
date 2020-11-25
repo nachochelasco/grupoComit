@@ -523,4 +523,5 @@ C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\staticwebassets\asap.m
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\asap.mvc.dll
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\asap.mvc.pdb
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\asap.mvc.genruntimeconfig.cache
+C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs

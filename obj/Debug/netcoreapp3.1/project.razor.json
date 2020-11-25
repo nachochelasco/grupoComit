@@ -14435,6 +14435,11 @@
       "FilePath": "c:\\Users\\Nacho\\Desktop\\grupoComit\\Views\\Home\\Login.cshtml",
       "TargetPath": "Views\\Home\\Login.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Nacho\\Desktop\\grupoComit\\Views\\Home\\Register.cshtml",
+      "TargetPath": "Views\\Home\\Register.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

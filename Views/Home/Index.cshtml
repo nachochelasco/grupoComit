@@ -1,4 +1,4 @@
-﻿@model IEnumerable<asap.mvc.Nota>
+﻿@model List<Nota>;
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -8,30 +8,17 @@
     <a asp-controller="Home" asp-action="Create" >Agregar Nota</a>
 </div>
 </br>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Titulo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cuerpo)
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cuerpo)
-            </td>
-        </tr>
+@foreach (Nota nota in Model)
+{
+        <div class="notaTitulo">
+            @nota.Titulo
+        </div>
+
+        <div class="notaCuerpo">
+            @nota.Cuerpo
+        </div>
 }
-    </tbody>
-</table>
+  
 
 
 
