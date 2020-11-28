@@ -30,7 +30,7 @@ namespace asap.mvc.Controllers
                 return View("Index",notasUser);
             }
             else {
-                return Redirect("/Home/Login");
+                return Redirect("/Login/Account");
             }
         }
 
@@ -66,54 +66,6 @@ namespace asap.mvc.Controllers
             return View() ;
         }
 
-        public IActionResult Login() 
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Login(string email, string nombre) 
-        {
-            Usuario userCheck = db.Usuarios.FirstOrDefault(u => u.Mail == email);
-            if(userCheck != null) 
-            {
-                if(userCheck.Nombre == nombre) {
-                    AgregarUsuarioALaSession(email, nombre) ;
-                    List<Nota> notasUser = new List<Nota>();
-                    notasUser = db.Notas.Where(n => n.Creador.Mail.Equals(userCheck.Mail)).ToList() ;
-                    return View("Index",notasUser);
-                }
-                else {
-                    return Redirect("/Home/Login");
-                }
-            } else {
-                return Redirect("/Home/Login");
-            }
-            
-        }
-
-        public IActionResult Register()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Register(string email, string nombre)
-        {
-            Usuario nuevoUsuario = new Usuario
-            {
-                Mail = email,
-                Nombre = nombre
-            };
-
-            db.Usuarios.Add(nuevoUsuario);
-            db.SaveChanges();
-            HttpContext.Session.Set<Usuario>("UsuarioLogueado", nuevoUsuario);
-            return Redirect("/Home/Index");
-
-        }
-
-
         public JsonResult AgregarUsuarioALaSession(string email, string nombre)
         {
             Usuario nuevoUsuario = new Usuario{
@@ -123,6 +75,12 @@ namespace asap.mvc.Controllers
 
             HttpContext.Session.Set<Usuario>("UsuarioLogueado", nuevoUsuario);
             return Json(nuevoUsuario);
+        }
+
+        public IActionResult SacarUsuarioEnSesion()
+        {
+            HttpContext.Session.Remove("UsuarioLogueado");
+            return RedirectToAction("Account", "Login") ;
         }
 
 

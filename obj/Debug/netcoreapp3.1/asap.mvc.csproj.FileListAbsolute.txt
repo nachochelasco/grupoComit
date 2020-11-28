@@ -508,7 +508,6 @@ C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\asap.mvc.TagHelpers.ou
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\asap.mvc.RazorCoreGenerate.cache
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -524,4 +523,5 @@ C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\asap.mvc.dll
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\asap.mvc.pdb
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\asap.mvc.genruntimeconfig.cache
 C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
-C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Login\Account.cshtml.g.cs
+C:\Users\Nacho\Desktop\grupoComit\obj\Debug\netcoreapp3.1\Razor\Views\Register\Register.cshtml.g.cs

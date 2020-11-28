@@ -1,5 +1,5 @@
 <h1>Iniciar Sesion</h1>
-<form method="POST" asp-action="Login" asp-controller="Home">
+<form method="POST" asp-action="Account" asp-controller="Login">
     <div class="form-group">
         <label for="exampleInputEmail1">Email</label>
         <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Ingresa tu email" required>
@@ -9,5 +9,7 @@
         <input type="text" class="form-control" id="exampleInputPassword1" name="nombre" placeholder="Ingresa tu nombre de usuario" required>
     </div>
         <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+        <a type="text" class="btn btn-primary" asp-controller="Register" asp-action="Register">Registrar</a>
     </div>
 </form>
+

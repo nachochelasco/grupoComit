@@ -14397,6 +14397,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Nacho\\Desktop\\grupoComit\\Views\\Login\\Account.cshtml",
+      "TargetPath": "Views\\Login\\Account.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Nacho\\Desktop\\grupoComit\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14409,11 +14414,6 @@
     {
       "FilePath": "c:\\Users\\Nacho\\Desktop\\grupoComit\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Nacho\\Desktop\\grupoComit\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14432,8 +14432,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Nacho\\Desktop\\grupoComit\\Views\\Home\\Login.cshtml",
-      "TargetPath": "Views\\Home\\Login.cshtml",
+      "FilePath": "c:\\Users\\Nacho\\Desktop\\grupoComit\\Views\\Register\\Register.cshtml",
+      "TargetPath": "Views\\Register\\Register.cshtml",
       "FileKind": "mvc"
     },
     {
